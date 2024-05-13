@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #333;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#calendar {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #4a4a4a;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background: #333;
+    color: #ccc;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+.fc-toolbar-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.fc-button {
+    background: #555 !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.fc-button-primary {
+    background: #666 !important;
+}
+.fc-button-active {
+    background: #888;
+}
+.fc-event {
+    background-color: #3788d8;
+    border: 1px solid #2662ac;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+}
+.fc-day-sat, .fc-day-sun {
+    background-color: #505050;
+}
+.fc .fc-daygrid-day-frame, 
+.fc .fc-daygrid-day, 
+.fc .fc-daygrid-day-top, 
+.fc .fc-scrollgrid-sync-table,
+.fc .fc-col-header-cell,
+.fc .fc-timegrid-slot, 
+.fc .fc-timegrid-slot-label, 
+.fc .fc-timegrid-slot-lane,
+.fc .fc-scrollgrid-section-header, 
+.fc .fc-scrollgrid-section-body, 
+.fc .fc-daygrid-day-number,
+.fc .fc-divider, 
+.fc .fc-row, 
+.fc .fc-view {
+    border-color: #4a4a4a;
+}
+.fc-event {
+    background-color: #3788d8; /* This is your event's background color */
+    border: 1px solid #3478c0; /* Darker shade of the background color for subtler border */
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+}
+.fc-day-today {
+    background-color: transparent !important;
+    position: relative;
+}
+.fc-button:hover {
+    background: #777 !important; /* Change this color to whatever you want the hover color to be */
+}
+.fc-day-today .fc-daygrid-day-number {
+    color: rgb(207, 41, 41);
+    position: relative;
+    z-index: 2;
+}
+@media (max-width: 768px) {
+    #calendar {
+        max-height: 1000px; /* Adjust this value as needed */
+    }
+
+    .fc-button {
+        font-size: 12px; /* Adjust this value as needed */
+        padding: 6px 12px; /* Adjust this value as needed */
+    }
+}
+    /* List view styles */
+.fc-list-day-side {
+    background-color: #444;
+    color: #505050;
+}
+
+.fc-list-day-side .fc-daygrid-day-number {
+    color: #ccc;
+}
+
+.fc-list-event {
+    background-color: #444;
+    border: 1px solid #444;
+    color: white;
+}
+
+.fc-list-event:hover {
+    background-color: #3478c0;
+}
